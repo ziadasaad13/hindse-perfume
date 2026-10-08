@@ -1,4 +1,5 @@
 import './globals.css';
+import FloatingSocials from '@/components/FloatingSocials';
 
 export const metadata = {
   title: 'هندسة بيرفيوم',
@@ -14,6 +15,7 @@ export default function RootLayout({
     <html lang="ar" dir="rtl">
       <body>
         {children}
+        <FloatingSocials />
       </body>
     </html>
   );

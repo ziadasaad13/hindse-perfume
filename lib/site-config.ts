@@ -1,40 +1,42 @@
 // الملف: lib/site-config.ts
 export const SITE_CONFIG = {
   brandName: "هندسة بيرفيوم - Handasa Perfume",
+  slogan: "معانا الحياة ريحتها حلوة",
   
-  // [السطر رقم 5] - حط هنا لينك صفحة الفيسبوك بتاعتكم
-  facebookUrl: "https://facebook.com/YOUR_PAGE_LINK",
+  // رابط صفحة الفيسبوك
+  facebookUrl: "https://www.facebook.com/share/19n1gxAxMd/",
 
-  // [السطر رقم 8] - حط هنا رقم الواتساب لاستقبال الطلبات (بالكود الدولي بدون علامة +، مثلاً: 2010xxxxxxxx)
-  whatsappNumber: "2010XXXXXXXX",
+  // رقم الواتساب الموحد
+  whatsappNumber: "201066510085",
 
-  // [السطر رقم 11] - حط هنا لينك موقع اكسسوارات تِبـر الخارجي
-  tabarUrl: "https://tabar-store.com",
+  // رابط موقع اكسسوارات تِبـر
+  tabarUrl: "https://tepar-ten.vercel.app/",
 
-  // [السطر رقم 14] - حط هنا لينك موقع عطور المحاكاة (تطيب)
-  tatayebUrl: "https://tatayeb-store.com",
+  // رابط موقع عطور المحاكاة (تطيّب)
+  tatayebUrl: "https://tatayab.vercel.app/",
 
-  // [السطر رقم 17] - حط هنا لينك بروفايل لينكد إن الخاص بك (لإضافته في حقوق الملكية أسفل الموقع)
-  linkedinUrl: "https://linkedin.com/in/amir-gawish",
+  // رابط لينكد إن
+  linkedinUrl: "https://www.linkedin.com/in/amir-gawish-3b7173403?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
 
-  // [السطر رقم 20] - رابط اللوجو العلوي للموقع
-  topLogoUrl: "/images/logo.png",
+  // كلمة مرور الأدمن
+  adminPassword: "karim123",
 
-  // [السطر رقم 23] - رابط اللوجو السفلي للموقع (الفوتر)
-  bottomLogoUrl: "/images/logo.png",
+  // روابط اللوجو
+  topLogoUrl: "/logo.png",
+  bottomLogoUrl: "/logo.png",
 
-  // الأسعار الأساسية الثابتة
+  // أسعار الورد والإضافات الافتراضية
   prices: {
-    rose: 30,        // سعر الوردة الواحدة
-    babyFlower: 45,  // سعر إضافة البيبي فلاور
-    butterfly: 30,   // سعر فراشات الزينة
+    rose: 30,
+    babyFlower: 50,
+    butterfly: 30,
   },
 
-  // أسعار الشحن التلقائية حسب المحافظة
+  // أسعار الشحن حسب المحافظات
   shippingRates: {
-    "كفر الشيخ والبحيرة": 65,
-    "محافظات بحري": 80,
-    "قبلي / الصعيد": 90,
-    "سيناء": 100,
+    tier65: ['كفر الشيخ', 'البحيرة'],
+    tier80: ['الإسكندرية', 'الدقهلية', 'الغربية', 'المنوفية', 'الشرقية', 'دمياط', 'بورسعيد', 'الإسماعيلية', 'السويس', 'مطروح'],
+    tier90: ['القاهرة', 'الجيزة', 'القليوبية', 'الفيوم'],
+    tier100Default: 100
   }
 };
